@@ -1,5 +1,5 @@
 {% set name = "optax" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optax-{{ version }}.tar.gz
-  sha256: 850946848ef4737f74c5c90c3156975cfb660690c7d5d7420b4c41b541b276b2
+  sha256: c2963ffa3b3ac47f72c2866625207c9468558ed18e6e471baac69d4de2ac3f58
 
 build:
   number: 0
