@@ -11,7 +11,7 @@ source:
   sha256: c2963ffa3b3ac47f72c2866625207c9468558ed18e6e471baac69d4de2ac3f58
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,7 +26,7 @@ requirements:
     - jax >=0.1.55
     - jaxlib >=0.1.37
     - numpy >=1.18.0
-    - typing_extensions ~=3.10
+    - typing_extensions >=3.10
 
 test:
   imports:
@@ -46,3 +46,4 @@ extra:
   recipe-maintainers:
     - PhilipVinc
     - hbq1
+    - ngam
