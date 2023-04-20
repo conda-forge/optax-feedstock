@@ -1,11 +1,11 @@
-About optax
-===========
+About optax-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/optax-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/deepmind/optax
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/optax-feedstock/blob/main/LICENSE.txt)
 
 Summary: A gradient processing and optimisation library in JAX.
 
