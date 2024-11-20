@@ -37,6 +37,8 @@ test:
     - pip check
   requires:
     - pip
+    # Required by chex until it gets fixed upstream
+    - setuptools
 
 about:
   home: https://github.com/deepmind/optax
