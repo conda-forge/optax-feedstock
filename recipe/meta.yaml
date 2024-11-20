@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optax-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/optax-{{ version }}.tar.gz
   sha256: 4e05d3d5307e6dde4c319187ae36e6cd3a0c035d4ed25e9e992449a304f47336
 
 build:
