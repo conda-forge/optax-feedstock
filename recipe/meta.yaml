@@ -1,14 +1,14 @@
 {% set name = "optax" %}
-{% set version = "0.2.3" %}
-
+{% set version = "0.2.4" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optax-{{ version }}.tar.gz
-  sha256: ec7ab925440b0c5a512e1f24fba0fb3e7d760a7fd5d2496d7a691e9d37da01d9
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/optax-{{ version }}.tar.gz
+  sha256: 4e05d3d5307e6dde4c319187ae36e6cd3a0c035d4ed25e9e992449a304f47336
 
 build:
   number: 0
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - absl-py >=0.7.1
     - chex >=0.1.86
     - jax >=0.4.27
@@ -37,6 +37,9 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
+    # Required by chex until it gets fixed upstream
+    - setuptools
 
 about:
   home: https://github.com/deepmind/optax
