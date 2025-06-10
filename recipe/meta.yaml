@@ -1,5 +1,5 @@
 {% set name = "optax" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/optax-{{ version }}.tar.gz
-  sha256: 4e05d3d5307e6dde4c319187ae36e6cd3a0c035d4ed25e9e992449a304f47336
+  sha256: b2e38c7aea376186deae758ba7a258e6ef760c6f6131e9e11bc561c65386d594
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
