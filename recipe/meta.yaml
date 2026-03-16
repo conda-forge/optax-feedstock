@@ -11,7 +11,7 @@ source:
   sha256: 8b6b2e5bd62bcc6c11f6172a1aff0d86da0eaeecbd5465b2b366b5d3d64f6efc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -23,9 +23,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - absl-py >=0.7.1
-    - chex >=0.1.86
-    - jax >=0.4.27
-    - jaxlib >=0.4.27
+    - chex >=0.1.87
+    - jax >=0.5.3
+    - jaxlib >=0.5.3
     - numpy >=1.18.0
     - typing_extensions >=3.10
     - etils
