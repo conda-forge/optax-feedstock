@@ -24,8 +24,8 @@ requirements:
     - python >={{ python_min }}
     - absl-py >=0.7.1
     - chex >=0.1.86
-    - jax >=0.4.27
-    - jaxlib >=0.4.27
+    - jax >=0.5.3
+    - jaxlib >=0.5.3
     - numpy >=1.18.0
     - typing_extensions >=3.10
     - etils
